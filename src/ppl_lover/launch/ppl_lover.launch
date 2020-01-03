@@ -1,0 +1,9 @@
+<launch>
+
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+		<param name="port" value="9090"/>
+	</include
+
+	<node name="testDrive" pkg="ppl_lover" type="testDrive.py" output="screen" />
+
+</launch>
